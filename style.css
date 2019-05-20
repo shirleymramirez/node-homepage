@@ -1,0 +1,100 @@
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font: 400 20px/1.5 'Source Sans Pro',Open Sans,Roboto,'San Francisco',Helvetica,Arial,sans-serif;
+    color: #333;
+    margin: 0;
+    background-color: #fff;
+}
+
+#wrapper {
+    display: flex;
+}
+
+#header {
+    background-color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+#node-logo img{
+    height: block;
+    margin: .5em auto 0 auto;
+    border: none;
+    max-height: 75px;
+    max-width: 180px;
+}
+
+#header nav {
+    cursor: default;
+}
+
+nav {
+    display: block;
+}
+
+.divider-pipeline {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.list-divider-pipe li {
+    display: inline-block;
+}
+
+#header nav a, #header nav a:link, #header nav a:active {
+    padding: 0 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ccc !important;
+}
+
+.nav-foundation {
+    background-color: #026e00;
+}
+
+/* @media screen and (min-width: 481px)
+#header li {
+    padding-bottom: 12px;
+} */
+
+#header li {
+    position: relative;
+}
+
+/* Body */
+#para-div {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2 {
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
