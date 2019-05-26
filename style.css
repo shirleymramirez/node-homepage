@@ -1,3 +1,7 @@
+.container {
+    text-align: center;
+}
+
 .container-fluid {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -6,19 +10,17 @@
 #header {
     background-color: #333;
     text-align: center;
+    height: 8rem;
 }
 
-.container {
-    text-align: center;
-}
 
 #node-logo img{
-    margin: 1.5rem auto 0 auto;
+    margin-top: 0.5rem;
     max-height: 75px;
 }
 
 .divider-pipeline {
-    margin: 0;
+    margin: -0.2rem;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -57,50 +59,27 @@
 
 /* Body */
 .jumbotron {
-    display: flex;
     background-color: #FFFFFF !important;
-    /*padding-bottom: 180px !important;*/
-    padding: 0;
-}
-
-#para-div {
-    padding: 10px;
-    text-align: center;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-bottom: 0 !important;
 }
 
 h2 {
     padding-top: 10px;
-    text-align: center;
 }
 
 .lts-current {
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 12px;
     width:300px;
     text-align: center;
  }
 
-a, a:link, a:active {
-    color: #43853d;
-    text-decoration: none;
-    border-radius: 2px;
-}
-
 .home-downloadbutton {
     display: block;
     margin-bottom: 8px;
-    padding: .2em .6em;
+    padding: .3rem .4rem;
     background-color: #026e00;
     color: #fff !important;
-    border-radius: 2px;
     font-size: 30px;
     text-decoration: none !important;
 } 
@@ -139,50 +118,74 @@ strong:hover {
 /* Footer */
 .footer {
     background-color: #333;
-    text-align: center;
-    display: block;
-    width: 100%;
     height: 200px;
 }
 
+#linux-footer {
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding: 1em 20px;
+    font-size: 14px;
+    color: #fff;
+    background: #333;
+    flex-direction: row;
+    text-align: left;
+}
+
+footerP, 
+.footerlinkP {
+    text-decoration: none !important;
+}
+
+p.footerP strong:hover {
+    background-color: none !important;
+}
+
+.footerP {
+    display: inline-flex;
+}
+
+.footerlinkP {
+    padding-left: 0.5rem;
+}
+
 .divider-footer-line {
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: flex-end;
+    text-align: right;
+    display: inline;
+    margin-left: 10rem;
 }
 
-.linux-footer, .footerP {
-    display: -webkit-box;
-    padding-left: 0;
+.divider-footer-line li {
+    display: inline-block;
 }
 
-/* Media Query */
-
-/*Small Screens*/
-@media screen and (min-width: 481px)
-.nav-foundation {
-    margin-left: 8px;
+.divider-footer-line li + li:before {
+    content: '|';
+    padding: 0 .3em 0 .1em;
+    color: #999;
 }
 
-@media screen and (min-width: 481px)
-header li {
-    padding-bottom: 12px;
+.link-footer {
+    font-size: 13px;            
+    color: #ccc !important;
 }
 
-
-/* Medium screens */
-@media all and (min-width: 600px) {
-  /* We tell both sidebars to share a row */
-  #header { flex: 1 auto; }
+p.footerP-1 {
+    margin: 0.25px;
 }
 
-/* Large screens */
-@media all and (min-width: 800px) {
-  /* We invert order of first sidebar and main
-   * And tell the main element to take twice as much width as the other two sidebars 
-   */
-  #header { flex: 2 0px; }
-  .jumbotron { order: 1; }
-  .footer  { order: 2; }
+p.footer-1{
+    font-size: small !important;
+}
+
+p.footer-2{
+    font-size: smaller !important;
+}
+
+p.footer-3{
+    font-size: x-small !important;
+}
+
+p.footer-4{
+    font-size: xx-small !important;
 }
