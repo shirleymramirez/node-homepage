@@ -5,11 +5,17 @@ body {
     color: #333;
     margin: 0;
     background-color: #fff;
+    padding: 0;
 }
 
-/* #wrapper {
-    display: block;
-} */
+#wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#wrapper > * {
+  flex: 1 100%;
+}
 
 #header {
     background-color: #333;
@@ -73,20 +79,27 @@ ul {
     background-color: #026e00;
 }
 
-/* @media screen and (min-width: 481px)
-#header li {
-    padding-bottom: 12px;
-} */
-
 #header li {
     position: relative;
 }
 
+.list-divider-pipe li + li:before {
+    content: '|';
+    padding: 0 .3em 0 .1em;
+    color: #999;
+}
+
 /* Body */
+.jumbotron {
+    display: flex;
+    background-color: #FFFFFF !important;
+    /*padding-bottom: 180px !important;*/
+    padding: 0;
+}
+
 #para-div {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    margin-top: 20px;
 }
 p {
     display: block;
@@ -97,7 +110,6 @@ p {
 }
 
 h2 {
-    margin-top: 20px;
     padding-top: 10px;
     text-align: center;
 }
@@ -144,4 +156,43 @@ a, a:link, a:active {
 
 ul.list-divider-pipe {
     text-align: center;
+    padding: 0;
+}
+
+strong:hover {
+    background-color: #026e00 !important;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.divider-footer-line {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Media Query */
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  #header { flex: 1 auto; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  #header { flex: 2 0px; }
+  .jumbotron { order: 1; }
+  .footer  { order: 2; }
 }
