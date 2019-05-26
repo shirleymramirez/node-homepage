@@ -123,26 +123,27 @@ strong:hover {
 
 #linux-footer {
     flex-wrap: wrap;
-    padding-top: 1rem;
-    padding: 1em 20px;
+    padding-top: 0.2rem;
     font-size: 14px;
     color: #fff;
     background: #333;
     flex-direction: row;
     text-align: left;
+    padding-left: 6rem;
 }
 
-footerP, 
+.footerP, 
 .footerlinkP {
     text-decoration: none !important;
 }
 
-p.footerP strong:hover {
+.footerP strong:hover {
     background-color: none !important;
 }
 
 .footerP {
     display: inline-flex;
+    margin: 0 !important;
 }
 
 .footerlinkP {
@@ -170,22 +171,23 @@ p.footerP strong:hover {
     color: #ccc !important;
 }
 
-p.footerP-1 {
-    margin: 0.25px;
-}
 
 p.footer-1{
-    font-size: small !important;
+    font-size: 13px;
 }
 
 p.footer-2{
-    font-size: smaller !important;
+    font-size: 12px;
 }
 
 p.footer-3{
-    font-size: x-small !important;
+    font-size: 11px;
 }
 
 p.footer-4{
-    font-size: xx-small !important;
+    font-size: 10px;
+}
+
+.plink {    
+    color: #ccc !important;
 }
